@@ -11,7 +11,5 @@
     {
         if (!activated)
             return;
-        // Implement your
-        // behaviours here
     }
 }

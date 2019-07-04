@@ -19,6 +19,12 @@ public class Ball : MonoBehaviour
     Renderer _ren;
 
     public Rigidbody Rb => _rb;
+    public bool IsGoingToRight => _rb.velocity.x > 0;
+
+    public bool IsAboveInZAxis(Vector3 other)
+    {
+        return transform.position.z > other.z; 
+    }
 
     private void Awake()
     {

@@ -3,6 +3,7 @@
 [RequireComponent(typeof(Rigidbody))]
 public class Paddle : MonoBehaviour
 {
+    public bool isRight;
     public float speed = 12f;
     public bool moveWithAcceleration = false;
 
